@@ -293,7 +293,7 @@ class CreateAccountController extends Controller
             ];
 
             $plan = (($fields['acc_type'] == 2) ? 'Loan Agent Plan' : 'Self Apply Plan');
-            sendBrevoHtmlMail2($mailData, 'Congratulations! Payment Successful for Easyailoans '.$plan, $sendGreetings, 3, $attachments);
+            sendBrevoHtmlMail2($mailData, 'Congratulations! Payment Successful for Loanzilla '.$plan, $sendGreetings, 3, $attachments);
             
             return true;
         } catch (\Exception $e) {

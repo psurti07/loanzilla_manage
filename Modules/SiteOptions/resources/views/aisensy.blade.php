@@ -40,7 +40,7 @@
     <script>
         function openAiSensySettingsModal(id){
             $.ajax({
-            url: `https://manage.easyailoans.com/aisensy-settings/edit/${id}`,
+            url: `https://manage.loanzilla.com/aisensy-settings/edit/${id}`,
             type: 'GET',
             contentType: "application/json",
             headers: {
